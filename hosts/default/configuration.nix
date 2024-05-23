@@ -51,7 +51,7 @@
   services.xserver.enable = true;
 
   # Enable the GNOME Desktop Environment.
-  services.xserver.displayManager.gdm.enable = true;
+  services.xserver.displayManager.lightdm.enable = true;
   services.xserver.windowManager.bspwm.enable = true;
 
   # Configure keymap in X11
@@ -84,6 +84,7 @@
      spotify
      starship
      polybar
+     bluej
      rofi
     ];
   };
@@ -102,8 +103,8 @@
   services.displayManager.autoLogin.user = "nick";
 
   # Workaround for GNOME autologin: https://github.com/NixOS/nixpkgs/issues/103746#issuecomment-945091229
-  systemd.services."getty@tty1".enable = false;
-  systemd.services."autovt@tty1".enable = false;
+  # systemd.services."getty@tty1".enable = false;
+  # systemd.services."autovt@tty1".enable = false;
 
   # Install firefox.
 
@@ -120,6 +121,13 @@
    kitty
    dunst
    feh
+   swayfx
+   grim
+   slurp
+   wl-clipboard
+   mako
+   flameshot
+   kanshi
    gruvbox-gtk-theme
    gruvbox-plus-icons
   ];
