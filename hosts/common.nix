@@ -76,6 +76,7 @@
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
     discord
+    obsidian
     starship
     polybar
     rofi
@@ -93,6 +94,7 @@
     dunst
     feh
     flameshot
+    bluej
     gruvbox-gtk-theme
     gruvbox-plus-icons
   ];
@@ -101,6 +103,7 @@
   fonts.packages = with pkgs; [
     fira-code
     fira-code-symbols
+    font-awesome_6
   ];
 
   ### Set the theme

@@ -32,5 +32,13 @@
 	inputs.stylix.nixosModules.stylix
       ];
     };
+    nixosConfigurations.diavolo= nixpkgs.lib.nixosSystem {
+      specialArgs = {inherit inputs;};
+      modules = [
+        ./hosts/acer/configuration.nix
+        inputs.home-manager.nixosModules.default
+	inputs.stylix.nixosModules.stylix
+      ];
+    };
   };
 }
