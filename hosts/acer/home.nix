@@ -21,12 +21,12 @@
   # environment.
   home.packages = [
   pkgs.fastfetch
-  # discord
-  obsidian
-  starship
-  polybar
-  rofi
-  dmenu
+  # pkgs.discord
+  pkgs.obsidian
+  pkgs.starship
+  pkgs.polybar
+  pkgs.rofi
+  pkgs.dmenu
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
