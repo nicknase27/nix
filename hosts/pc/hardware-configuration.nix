@@ -32,7 +32,13 @@
   fileSystems."/run/media/samsung" =
     { device = "/dev/disk/by-uuid/A0D2555DD255392C";
       fsType = "ntfs-3g";
-      options = ["uid=1000" "gid=1000" "rw"];
+      options = ["uid=1000" "gid=1000" "rw" "nofail"];
+    };
+
+  fileSystems."/run/media/PS" =
+    { device = "/dev/disk/by-uuid/6C84D8E784D8B4B4";
+      fsType = "ntfs-3g";
+      options = ["uid=1000" "gid=1000" "rw" "nofail" ];
     };
 
   swapDevices = [ ];

@@ -5,10 +5,12 @@
     keybindings = 
     {
       "super + Return" = "kitty";
-      "super + d" = "sh ~/.config/rofi/launchers/type-6/launcher.sh";
+      # "super + d" = "sh ~/.config/rofi/launchers/type-6/launcher.sh";
+      "super + d" = "dmenu_run";
       "super + Escape" = "pkill -USR1 -x sxhkd";
 
-      "super + w" = "firefox";
+      # "super + w" = "firefox";
+      "super + w" = "librewolf";
     
       "super + alt + {q,r}" = "bspc {quit,wm -r}";
       "super + {_,shift + }q" = "bspc node -{c,k}";

@@ -12,6 +12,9 @@
       rebuild = "sudo nixos-rebuild switch --flake ~/nixv2/#dio";
       tst = "sudo nixos-rebuild test --flake ~/nixv2/#dio";
 
+      vim = "nvim";
+      vi = "nvim";
+
       ff = "clear && fastfetch";
     };
     shellInitLast = ''

@@ -5,7 +5,7 @@
     #nix-colors.homeManagerModules.default
     ../../modules/home-manager/sxhkd.nix
     ../../modules/home-manager/kitty.nix
-    ../../modules/home-manager/neovim.nix
+    #../../modules/home-manager/neovim.nix
     ./modules/bspwm.nix
     ./modules/fish.nix
   ];
@@ -23,6 +23,12 @@
   # environment.
   home.packages = [
   pkgs.fastfetch
+  pkgs.discord
+  pkgs.obsidian
+  pkgs.starship
+  pkgs.polybar
+  pkgs.rofi
+  pkgs.dmenu
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage

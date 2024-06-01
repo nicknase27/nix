@@ -75,17 +75,12 @@
     description = "nick";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
-    discord
-    obsidian
-    starship
-    polybar
-    rofi
     ];
   };
 
   ### Install Packages
   environment.systemPackages = with pkgs; [
-    firefox
+    librewolf
     wget
     curl
     stow
@@ -94,7 +89,9 @@
     dunst
     feh
     flameshot
-    bluej
+    neovim
+    libgcc
+    unzip
     gruvbox-gtk-theme
     gruvbox-plus-icons
   ];
@@ -121,5 +118,8 @@
   programs.git.enable = true;
   services.openssh.enable = true;
   programs.ssh.startAgent = true;
+
+  ### Allow unfree packages in home-manager
+  home-manager.users.nick.nixpkgs.config.allowUnfree = true;
 
 }
